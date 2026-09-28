@@ -28,6 +28,10 @@ bun run typecheck
 
 The built files are committed: OpenChamber installs extensions without building them. Bump `version` in `package.json` to ship an update through Git.
 
+## Credits
+
+The canvas integration started in OpenChamber itself, contributed by [Maksym Mospanenko](https://github.com/mmospanenko) in [openchamber#4064](https://github.com/openchamber/openchamber/pull/4064), and moved here when Excalidraw became an extension.
+
 ## License
 
 MIT. Excalidraw itself is MIT, © Excalidraw.
