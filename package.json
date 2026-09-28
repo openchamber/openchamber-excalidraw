@@ -7,6 +7,9 @@
   "license": "MIT",
   "openchamber": {
     "apiVersion": 1,
+    "engines": {
+      "openchamber": ">=2.0.4"
+    },
     "contributes": {
       "panel": {
         "id": "excalidraw",
@@ -17,7 +20,10 @@
         {
           "id": "canvas",
           "title": "Excalidraw",
-          "match": ["*.excalidraw", "*.excalidraw.md"],
+          "match": [
+            "*.excalidraw",
+            "*.excalidraw.md"
+          ],
           "entry": "editor/index.html"
         }
       ]
