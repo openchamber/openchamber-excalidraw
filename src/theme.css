@@ -1,0 +1,45 @@
+/*
+ * The editor's chrome (toolbar, islands, popups, menus, inputs, selection
+ * outline) follows the OpenChamber theme instead of Excalidraw's own violet
+ * palette. `applyHostReady` writes the host colours as `--oc-*` variables on
+ * the root. The canvas background is left alone: it is part of the drawing
+ * and saved in the file (`appState.viewBackgroundColor`).
+ *
+ * Excalidraw defines these on `:root` and `.excalidraw.theme--dark`; the
+ * wrapper class outranks both for light and dark.
+ */
+html,
+body,
+#root,
+.oc-excalidraw {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.oc-excalidraw .excalidraw,
+.oc-excalidraw .excalidraw.theme--dark {
+  --color-primary: var(--oc-primary);
+  --color-primary-hover: color-mix(in srgb, var(--oc-primary) 88%, var(--oc-fg));
+  --color-primary-darker: color-mix(in srgb, var(--oc-primary) 88%, var(--oc-fg));
+  --color-primary-darkest: color-mix(in srgb, var(--oc-primary) 76%, var(--oc-fg));
+  --color-primary-light: var(--oc-selection);
+  --color-primary-light-darker: var(--oc-active);
+  --color-surface-primary-container: var(--oc-selection);
+  --color-on-primary-container: var(--oc-selection-fg);
+  --color-selection: var(--oc-primary);
+
+  --island-bg-color: var(--oc-elevated);
+  --popup-bg-color: var(--oc-elevated);
+  --sidebar-bg-color: var(--oc-elevated);
+  --color-surface-lowest: var(--oc-bg);
+  --color-surface-low: var(--oc-muted-surface);
+  --color-surface-mid: var(--oc-muted-surface);
+  --color-surface-high: var(--oc-hover);
+  --color-on-surface: var(--oc-fg);
+  --text-primary-color: var(--oc-fg);
+  --default-border-color: var(--oc-border);
+  --input-bg-color: var(--oc-elevated);
+  --input-border-color: var(--oc-border);
+}
