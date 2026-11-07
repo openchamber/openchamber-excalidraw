@@ -15,7 +15,7 @@ In OpenChamber, open Settings → Extensions and add this repository's Git URL. 
 - Mermaid and text-to-diagram. The converter is about two thousand modules on its own, so this build leaves it out and hides its menu entries.
 - Export and "save as image". OpenChamber owns the file, and the canvas can't write elsewhere.
 
-Excalidraw loads its hand-drawn fonts from the esm.sh CDN the first time you open a drawing.
+Excalidraw loads its hand-drawn fonts from the esm.sh CDN the first time you open a drawing. OpenChamber asks you to approve esm.sh; without approval, canvas text falls back to a system font.
 
 ## Build
 

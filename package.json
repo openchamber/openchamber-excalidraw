@@ -1,6 +1,6 @@
 {
   "name": "openchamber-excalidraw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Draw in .excalidraw and Obsidian .excalidraw.md files right in OpenChamber's Files view",
   "private": true,
   "type": "module",
@@ -11,6 +11,7 @@
       "openchamber": ">=2.0.4"
     },
     "contributes": {
+      "origins": ["https://esm.sh"],
       "panel": {
         "id": "excalidraw",
         "name": "Excalidraw",
